@@ -1,0 +1,180 @@
+<!-- https://demo.kaliumtheme.com/blogging/ Inspired by. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelogging</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+<body>
+    <div id = "navigation-page">
+        <div id = "navigation-header">
+            <a id = "close-h-options" onclick = "closeNav()"><span class = "fas fa-times"></span></a>
+        </div>
+        <div id = "navigation-content">
+            <a href = "#">About Me</a>
+            <a href = "#">Travel Guides</a>
+            <a href = "#">Contact Me</a>
+            <a href = "#">Services</a>
+        </div>
+    </div>
+
+    <div id = "search-page">
+        <div id = "search-header">
+            <a id = "close-h-options-r" onclick = "closeSearch()"><span class = "fas fa-times"></a>
+        </div>
+        <div id = "search-content">
+            <input type="text" placeholder = "Search here..." id = "search-input">
+            <button id = "search-submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <div id = "blog-content">
+        <div class="header-grid">
+            <a id = "h-options" onclick = "openNav()"><span class="fas fa-bars"></span></a>
+            <div id="logo"><i class="fas fa-camera-retro"></i></div>
+            <a id="h-search" onclick = "openSearch()"><i class="fas fa-search"></i></a>
+        </div>
+
+        <div class="main-grid">
+            <div class = "content-grid">
+                <div class="blog-headline">
+                    <h1>Travelling to Greece, Guide to Enjoyment</h1>
+                    <p>A guide to help you travel around Greece, and find some of the unique tourist spots you never knew existed.</p>
+                    <div class = "blog-author">
+                        <div class="blog-author-img">
+                            <img src="assets/image/author_pic.jpg">
+                        </div>
+                        <div class="blog-author-full">
+                            <h3 class="blog-author-name">Sarah Ipsum</h3>
+                            <h4 class="blog-author-desc">Author and Cat Enthusiast</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <div class = "post-img">
+                        <img src="assets/image/blog_pic1.jpg" alt="" class="image">
+                    </div>
+                    <div class="post-content">
+                        <h2>Do you want to prepare for a lovely trip in Greece? Or are you curious about your next trip?</h2>
+                        <p class="blog-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio repellendus vel optio ipsa, nihil dolorum aliquid in obcaecati. Adipisci, facilis.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sapiente impedit iusto voluptate tenetur dolore autem cupiditate, dolores temporibus ratione possimus ipsum a recusandae quae sequi doloribus quasi ullam consequatur nihil architecto esse tempora. Itaque quod blanditiis adipisci amet facilis?
+                        </p>
+
+                        <h2>People & Culture</h2>
+                        <p class="blog-desc">
+                            Family life is a very important part of life in Greece. Children often live with their parents even after they get married. Greeks live long lives and it is thought that their varied diet of olives, olive oil, lamb, fish, squid, chickpeas, and lots of fruits and vegetables keep them healthy.
+
+                            Nearly two-thirds of the people live in large cities. Athens is the largest city, with over 3.7 million people crowding the metropolis. Nefos, the Greek term for smog, is a big problem in Athens. The Parthenon, the temple to goddess Athena atop the Acropolis, is deteriorating due to pollution and acid rain.
+                            
+                            Olive trees have been cultivated in Greece for over 6,000 years. Every village has its own olive groves.
+                        
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A mollitia facilis nam ad cupiditate minus. Minima ipsum maiores repellendus, quis velit eveniet culpa officia voluptas qui error, et obcaecati. Voluptatem beatae quasi harum? Sit repellat temporibus dignissimos corporis minima voluptatem?</p>
+                        
+                        <h2>Nature</h2> 
+
+                        <div class="post-img">
+                            <img src="assets/image/blog_pic2.jpg" class="image">
+                        </div>
+                        <p class="blog-desc">Most of the country was forested at one time. Over the centuries, the forests were cut down for firewood, lumber, and to make room for farms. Today, forests can be found mainly in the Pindus and Rhodope ranges.
+
+                            Greece has ten national parks and there is an effort to protect natural and historic landmarks. Marine parks help protect the habitats of two of Europe's most endangered sea creatures, the loggerhead turtle and monk seal. The long coastline and clear water make Greece an ideal location to spot sea stars, sea anemones, sponges, and seahorses hiding in the seaweed.
+                            
+                            The Greek landscape is covered by maquis, a tangle of thorny shrubs that don't need a lot of water. These plants include fragrant herbs such as thyme, rosemary, oregano, and bay and myrtle trees. Bird watching is popular in Greece where geese, ducks, and swallows stop over during their migration from Africa to Europe.
+                         
+                        </p>
+                        
+                            <div class = "post-details">
+                            <div class = "post-date">
+                                <i class="far fa-calendar-alt"></i>
+                                July 21st, 2020
+                            </div>
+                            <div class = "post-author">
+                                <i class="fas fa-user-edit"></i>
+                                Lorem ipsum
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sidebar-grid">
+                <h2>Popular Blogs</h2>
+                <a href=""><div class = "card">
+                    <img src="assets/image/blog_pic4.jpg">
+                    <div class = "card-content">
+                        <h2>Heading out to Rome?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime cumque labore animi eaque sunt officia. Obcaecati ex earum illo?</p>
+                    </div>
+                </div></a>
+                <a href=""><div class = "card">
+                    <img src="assets/image/blog_pic6.jpg">
+                    <div class = "card-content">
+                        <h2>Traveling Around Paris</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quasi, error porro inventore assumenda excepturi modi, quibusdam magnam voluptatum soluta ullam delectus ducimus repellendus iusto?</p>
+                    </div>
+                </div></a>
+                <a href=""><div class = "card">
+                    <img src="assets/image/blog_pic7.jpg">
+                    <div class = "card-content">
+                        <h2>Videography of Greece</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere minus laboriosam laudantium deserunt eveniet error unde esse incidunt laborum animi, similique repellendus mollitia molestiae eius saepe quam atque amet. Ad!</p>
+                    </div>    
+                </div></a>
+                <a href=""><div class = "card">
+                    <img src="assets/image/blog_pic4.jpg">
+                    <div class = "card-content">
+                        <h2>Heading out to Rome?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime cumque labore animi eaque sunt officia. Obcaecati ex earum illo?</p>
+                    </div>
+                </div></a>
+                <a href=""><div class = "card">
+                    <img src="assets/image/blog_pic6.jpg">
+                    <div class = "card-content">
+                        <h2>Traveling Around Paris</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quasi, error porro inventore assumenda excepturi modi, quibusdam magnam voluptatum soluta ullam delectus ducimus repellendus iusto?</p>
+                    </div>
+                </div></a>
+                <a href=""><div class = "card">
+                    <img src="assets/image/blog_pic7.jpg">
+                    <div class = "card-content">
+                        <h2>Videography of Greece</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere minus laboriosam laudantium deserunt eveniet error unde esse incidunt laborum animi, similique repellendus mollitia molestiae eius saepe quam atque amet. Ad!</p>
+                    </div>    
+                </div></a>
+                <a href=""><div class = "card">
+                    <img src="assets/image/blog_pic4.jpg">
+                    <div class = "card-content">
+                        <h2>Heading out to Rome?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime cumque labore animi eaque sunt officia. Obcaecati ex earum illo?</p>
+                    </div>
+                </div></a>
+            </div>
+        </div>  
+
+        <div class="footer-grid">
+            <div class = "social-media">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class = "copyrights">
+                Created by Steven Harjapramana &copy; 2020 All Rights Reserved.
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Scripts -->
+    
+    <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

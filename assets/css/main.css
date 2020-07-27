@@ -1,0 +1,334 @@
+html {
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+body {
+  font-family: "Playfair Display";
+  color: rgb(88, 86, 86);
+}
+/* Header CSS Grid */
+.header-grid { 
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  margin: 0 5%;
+
+}
+
+
+#h-options, #close-h-options{
+  text-align: left;
+  padding-left:1em;
+  color:	#CD853F;
+  cursor: pointer;
+}
+
+#close-h-options-r{
+  cursor: pointer;
+  color: #CD853F;
+}
+
+#logo{
+  text-align: center;
+  color: 	#CD853F;
+}
+
+#h-search {
+  text-align: right;
+  padding-right: 1em;
+  color:#CD853F;
+  cursor: pointer;
+}
+
+#h-search:hover, #h-options:hover{
+  color:	#FFA500;
+  transition: all 0.3s ease;
+}
+
+
+/* Main CSS Grid */
+.main-grid { 
+  margin: 0 10%;
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+
+/* Footer CSS Grid */
+.footer-grid{
+  display: grid;
+  background-color: purple;
+  padding: 20px 0;
+  font-size: 20px;
+  text-align: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Overlay CSS Content - Navigation Page */
+#navigation-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(to right,  #f5f5f5 0%,#f5f5f5 40%,#000000cb 40%,#000000cb 100%);
+  transition: 0.5s;
+}
+
+#navigation-header {
+  display: grid;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#navigation-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  left: 15%;
+}
+
+#navigation-content a{
+  font-size: 30px;
+  text-decoration: none;
+  color: #CD853F;
+  display: block;
+}
+
+#navigation-content a:hover{
+  color: #FFA500;
+  transition: all 0.3s ease;
+}
+
+#close-h-options > span:hover, #close-h-options-r > span:hover{
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+  color: #FFA500;
+}
+/* Search Page Overlay Related */
+
+#search-page {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(to left,  #f5f5f5 0%,#f5f5f5 40%,#000000cb 40%,#000000cb 100%);
+  text-align: right;
+  transition: 0.5s;
+}
+
+
+#search-header{
+  display: grid;
+  padding: 20px 20px;
+  font-size: 30px;
+}
+
+#search-content {
+  position: relative;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+}
+
+#search-input, #search-submit {
+  padding: 1em;
+  border-radius: 25px;
+  font-size: 1em;
+  color: #CD853F;
+}
+
+
+/* Overlay Related */
+
+#blog-content{
+  transition: all 0.5s ease;
+}
+
+.move-right {
+  margin-left: 20%;
+}
+
+.move-left {
+  margin-right: 20%;
+}
+
+/* Content Related CSS */
+.headline{
+  font-family: "Lobster";
+  font-size: 2em;
+  text-align: center;
+}
+.post{
+  margin: 5%;
+  background: white;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.post:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.image{
+  width: 100%;
+  opacity: 0.9;
+  transition: all .4s ease;
+}
+
+.image:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.post-img {
+  overflow: hidden;
+}
+
+
+/* Title */
+.post-title{
+  text-decoration: none;
+  color: black;
+  transition: 300ms;
+  border-bottom: 1px solid transparent;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.post-title:hover{
+  border-color: black;
+}
+
+.post-content{
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.blog-desc {
+  padding: 0 2em;
+  font-family: "Quicksand";
+}
+
+.post-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.post-date > i, .post-author > i{
+  transform: scale(1.5);
+  margin: 1em;
+}
+
+/* Footer Related CSS */
+.footer-grid {
+  background-color: white;
+  font-family: "Quicksand";
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media > a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.5);
+  font-size: 1.5em;
+  margin: 0 0.5em;
+  transition: all 0.5s ease;
+}
+
+.social-media > a:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+/* Sidebar CSS Grid */
+.sidebar-grid{
+  margin: 20% 0;
+}
+
+.sidebar-grid > a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.card{
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin: 2em 0;
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card > img{
+  width: 100%;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-content{
+  font-family: "Quicksand";
+}
+
+h2 {
+  font-family: "Lobster";
+}
+
+
+/* Blog HTML CSS */
+
+
+.blog-headline {
+  position: relative;
+}
+
+.blog-author-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+}
+
+.blog-author-img img{
+  width: 100%;
+  height: auto;
+}
+
+.blog-author {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 30%;
+}
+
+.blog-post {
+  margin-right: 2em;
+  border-top: 1px solid black;
+  padding-top: 2em;
+}
+
+.blog-headline > p{
+  border-bottom: 1px solid black;
+  padding-bottom: 2em;
+  width: 97%;
+}
+
+
